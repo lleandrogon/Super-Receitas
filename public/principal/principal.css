@@ -1,0 +1,34 @@
+.cabecalho {
+    padding: 20px 10px;
+}
+
+.row {
+    margin: 0;
+}
+
+.titulo-projeto {
+    margin-left: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 100px;
+}
+
+.links-lista {
+    margin-top: 5px;
+}
+
+.link {
+    margin: 0 20px;
+    color: var(--preto);
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    color: var(--verde);
+}

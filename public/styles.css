@@ -1,0 +1,13 @@
+:root {
+    --verde: #37B100;
+    --laranja: #F79417;
+    --preto: #000000;
+}
+
+.sem-marcadores {
+    list-style-type: none;
+}
+
+.sem-sublinhado {
+    text-decoration: none;
+}
