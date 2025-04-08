@@ -1,0 +1,48 @@
+.registro-container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--verde-escuro), var(--branco));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-registro {
+    background: var(--branco);
+    padding: 25px;
+    border-radius: 25px;
+    width: 400px;
+}
+
+.titulo-registro {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--verde);
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 25px;
+    border: 1px solid var(--cinza-claro);
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: var(--verde);
+    box-shadow: 0 0 5px var(--verde-escuro);
+}
+
+.erro {
+    margin: 10px 0;
+    text-align: center;
+    color: var(--vermelho);
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .form-registro {
+        width: 700px;
+        padding: 40px;
+    }
+}

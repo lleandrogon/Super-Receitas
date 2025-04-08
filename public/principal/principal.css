@@ -7,10 +7,7 @@
 }
 
 .titulo-projeto {
-    margin-left: 15px;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
+    display: none;
 }
 
 .logo {
@@ -31,4 +28,46 @@
 
 .link:hover {
     color: var(--verde);
+}
+
+.menu-burger {
+    margin-right: 10px;
+    font-size: 3em;
+    transition: transform 0.3s ease;
+}
+
+.menu-burger:hover {
+    cursor: pointer;
+    color: var(--verde);
+    transform: rotate(90deg);
+}
+
+.links-lista-responsivo {
+    margin-top: 15px;
+}
+
+.links-lista-responsivo li {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.link-responsivo {
+    color: var(--preto);
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.link-responsivo:hover {
+    color: var(--verde);
+}
+
+@media (min-width: 768px) {
+    .titulo-projeto {
+        display: flex;
+        margin-left: 15px;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }

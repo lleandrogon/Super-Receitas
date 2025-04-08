@@ -1,7 +1,12 @@
 :root {
     --verde: #37B100;
+    --verde-escuro: #319b00;
     --laranja: #F79417;
+    --vermelho: #cc0000;
     --preto: #000000;
+    --cinza-claro: #e6e6e6;
+    --cinza: #d4d4d4;
+    --branco: #ffffff;
 }
 
 .sem-marcadores {
@@ -10,4 +15,35 @@
 
 .sem-sublinhado {
     text-decoration: none;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--preto);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.botao-login-registro {
+    width: 25%;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 15px;
+    margin: 15px 5px 0px 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--verde);
+    color: var(--branco);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.botao-login-registro:hover {
+    background-color: var(--verde-escuro);
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px var(--verde);
+    cursor: pointer;
 }
