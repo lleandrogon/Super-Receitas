@@ -40,7 +40,7 @@ class ReceitaSeeder extends Seeder
                 'ingredientes' => '1 xícara de farinha, 1 ovo, 3/4 xícara de leite, 2 colheres de açúcar, 1 colher de fermento, 1 pitada de sal.',
                 'preparo' => 'Misture todos os ingredientes até obter uma massa homogênea. Aqueça uma frigideira antiaderente, coloque pequenas porções e doure dos dois lados. Sirva com mel ou frutas.',
                 'tempo' => 20,
-                'imagem' => 'receitas/panqueca-americana.jpg',
+                'imagem' => 'receitas/panqueca-americana.webp',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
                 'user_id' => 4
@@ -50,7 +50,7 @@ class ReceitaSeeder extends Seeder
                 'ingredientes' => '1 lata de leite condensado, 2 colheres de sopa de chocolate em pó, 1 colher de sopa de manteiga.',
                 'preparo' => 'Em uma panela, misture todos os ingredientes e cozinhe em fogo médio, mexendo sem parar até desgrudar do fundo (cerca de 10 minutos). Deixe esfriar e faça bolinhas.',
                 'tempo' => 15,
-                'imagem' => 'receitas/brigadeiro.jpg',
+                'imagem' => 'receitas/brigadeiro.webp',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
                 'user_id' => 1
@@ -70,7 +70,7 @@ class ReceitaSeeder extends Seeder
                 'ingredientes' => '2 peitos de frango, suco de 1 limão, 2 colheres de azeite, sal, pimenta e ervas a gosto.',
                 'preparo' => 'Tempere o frango com limão, sal, pimenta e ervas. Deixe marinar por 15 minutos. Grelhe em frigideira antiaderente com azeite por 6-8 minutos de cada lado até dourar.',
                 'tempo' => 25,
-                'imagem' => 'receitas/frango-grelhado.jpg',
+                'imagem' => 'receitas/frango-grelhado.webp',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
                 'user_id' => 9
@@ -90,7 +90,7 @@ class ReceitaSeeder extends Seeder
                 'ingredientes' => '1 xícara de morangos, 1 banana, 1 xícara de iogurte natural, 1/2 xícara de leite, 1 colher de mel.',
                 'preparo' => 'Lave os morangos e descasque a banana. Bata todos os ingredientes no liquidificador até ficar homogêneo. Sirva gelado.',
                 'tempo' => 5,
-                'imagem' => 'receitas/smoothie-de-morango.jpg',
+                'imagem' => 'receitas/smoothie-de-morango.webp',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
                 'user_id' => 15

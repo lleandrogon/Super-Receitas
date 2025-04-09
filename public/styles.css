@@ -6,6 +6,7 @@
     --preto: #000000;
     --cinza-claro: #e6e6e6;
     --cinza: #d4d4d4;
+    --cinza-escuro: #505050;
     --branco: #ffffff;
 }
 
@@ -20,6 +21,10 @@
 .form-label {
     font-weight: 600;
     color: var(--preto);
+}
+
+.form-control {
+    border-radius: 20px;
 }
 
 .form-control:focus {

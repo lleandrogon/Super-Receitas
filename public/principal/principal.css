@@ -1,73 +1,64 @@
-.cabecalho {
-    padding: 20px 10px;
+.home {
+    background: url('/assets/home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
 }
 
-.row {
-    margin: 0;
+.receitas {
+    margin-top: 40px;
 }
 
-.titulo-projeto {
-    display: none;
+.borda-card {
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
-.logo {
-    width: 100px;
+.card-img-top {
+    height: 250px;
 }
 
-.links-lista {
-    margin-top: 5px;
+.borda-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
-.link {
-    margin: 0 20px;
-    color: var(--preto);
+.titulo-receita {
+    font-size: 1.5em;
     font-weight: bold;
+    margin: 25px 0px;
+}
+
+.descricao {
+    color: var(--cinza-escuro);
+}
+
+.descricao span {
+    color: var(--preto);
+    font-weight: 500;
     font-size: 1.1em;
-    text-transform: uppercase;
 }
 
-.link:hover {
-    color: var(--verde);
-}
-
-.menu-burger {
-    margin-right: 10px;
-    font-size: 3em;
-    transition: transform 0.3s ease;
-}
-
-.menu-burger:hover {
-    cursor: pointer;
-    color: var(--verde);
-    transform: rotate(90deg);
-}
-
-.links-lista-responsivo {
-    margin-top: 15px;
-}
-
-.links-lista-responsivo li {
-    padding: 15px 0;
+.botao-card {
+    display: block;
     text-align: center;
+    margin-top: 25px;
+    background-color: var(--verde);
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.link-responsivo {
-    color: var(--preto);
-    font-weight: bold;
-    font-size: 1.2em;
-    text-transform: uppercase;
-}
-
-.link-responsivo:hover {
-    color: var(--verde);
-}
-
-@media (min-width: 768px) {
-    .titulo-projeto {
-        display: flex;
-        margin-left: 15px;
-        font-size: 1.5em;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
+.botao-card:hover {
+    background-color: var(--verde-escuro);
+    box-shadow: 0 4px 10px var(--laranja);
 }

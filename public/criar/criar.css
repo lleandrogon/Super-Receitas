@@ -1,0 +1,48 @@
+.form-container {
+    width: 100%;
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form-criar {
+    width: 90%;
+    max-width: 700px;
+    padding: 40px;
+    border: 3px solid var(--verde);
+    border-radius: 30px;
+    box-shadow: 0 4px 10px var(--cinza-escuro);
+}
+
+.titulo-form {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: var(--verde);
+    box-shadow: 0 0 5px var(--verde-escuro);
+}
+
+.botao-container {
+    margin-top: 50px;
+}
+
+.botao-criar {
+    background-color: var(--verde);
+    color: var(--branco);
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease ,transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.botao-criar:hover {
+    color: var(--verde);
+    background-color: var(--branco);
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px var(--verde);
+}

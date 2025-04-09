@@ -8,4 +8,8 @@ class Receita extends Model
 {
     protected $table = "receitas";
     protected $fillable = ["titulo", "ingredientes", "preparo", "tempo", "imagem", "user_id"];
+
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
 }
