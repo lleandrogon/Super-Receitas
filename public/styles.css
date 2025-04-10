@@ -2,7 +2,9 @@
     --verde: #37B100;
     --verde-escuro: #319b00;
     --laranja: #F79417;
+    --laranja-escuro: #d47f16;
     --vermelho: #cc0000;
+    --vermelho-escuro: #880000;
     --preto: #000000;
     --cinza-claro: #e6e6e6;
     --cinza: #d4d4d4;
@@ -30,6 +32,13 @@
 .form-control:focus {
     box-shadow: none;
     outline: none;
+}
+
+.erro {
+    margin: 10px 0;
+    text-align: center;
+    color: var(--vermelho);
+    font-weight: 600;
 }
 
 .botao-login-registro {

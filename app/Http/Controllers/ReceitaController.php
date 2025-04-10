@@ -58,4 +58,49 @@ class ReceitaController extends Controller
 
         return view("minhasReceitas", compact("receitas"));
     }
+
+    public function destroy($id) {
+        $receita = Receita::findOrFail($id);
+        $receita->delete();
+
+        return redirect()->back();
+    }
+
+    public function editar($id) {
+        $receita = Receita::findOrFail($id);
+
+        return view("editar", compact("receita"));
+    }
+
+    public function update(Request $request, $id) {
+        $regras = [
+            'titulo' => 'required',
+            'ingredientes' => 'required',
+            'preparo' => 'required',
+            'tempo' => 'required|integer|min:1',
+            'imagem' => 'required|image|mimes:jpg,jpeg,png,webp|max:2048'
+        ];
+
+        $feedback = [
+            'titulo.required' => 'O nome da receita é obrigatório!',
+            'ingredientes.required' => 'Ingredientes são obrigatórios!',
+            'preparo.required' => 'O preparo é obrigatório!',
+            'tempo.*' => 'O tempo fornecido é inválido!',
+            'imagem.*' => 'Imagem deve ter extensão (jpg, jpeg, png, webp) com no máximo 2MB.'
+        ];
+
+        $request->validate($regras, $feedback);
+
+        $caminhoImagem = $request->file('imagem')->store('receitas', 'public');
+
+        Receita::where('id', $id)->update([
+            'titulo' => $request->titulo,
+            'ingredientes' => $request->ingredientes,
+            'preparo' => $request->preparo,
+            'tempo' => $request->tempo,
+            'imagem' => $caminhoImagem
+        ]);
+
+        return redirect()->route('minhas.receitas');
+    }
 }

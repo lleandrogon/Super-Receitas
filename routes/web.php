@@ -25,4 +25,10 @@ Route::get("/receita/{id}", [ReceitaController::class, "show"])->name("mostrar")
 
 Route::get("/minhas-receitas", [ReceitaController::class, "minhasReceitas"])->name("minhas.receitas")->middleware(CancelarRotaMiddleware::class);
 
+Route::get("/minhas-receitas/{id}", [ReceitaController::class, "editar"])->name("receita.form.editar")->middleware(CancelarRotaMiddleware::class);
+
+Route::put("minhas-receitas/{id}", [ReceitaController::class, "update"])->name("receita.update");
+
+Route::delete("minhas-receitas/{id}", [ReceitaController::class, "destroy"])->name("receita.destroy")->middleware(CancelarRotaMiddleware::class);
+
 Route::post("/logout", [LoginController::class, "logout"])->name("logout");

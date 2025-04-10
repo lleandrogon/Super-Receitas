@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     padding: 0 20px;
-    overflow-x: auto;
+    max-width: 100%;
 }
 
 .tabela {
@@ -52,11 +52,31 @@
     color: var(--cinza-escuro);
 }
 
+.caneta {
+    color: var(--laranja);
+    font-size: 1.3em;
+}
+
+.caneta:hover {
+    color: var(--laranja-escuro);
+}
+
+.lixo {
+    border: none;
+    background-color: transparent;
+    color: var(--vermelho);
+    font-size: 1.2em;
+}
+
+.lixo:hover {
+    color: var(--vermelho-escuro);
+}
+
 @media (max-width: 768px) {
     .tabela th,
     .tabela td {
         padding: 12px 14px;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .titulo {

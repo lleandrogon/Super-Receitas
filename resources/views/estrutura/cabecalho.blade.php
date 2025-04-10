@@ -1,9 +1,9 @@
-<link rel="stylesheet" href="cabecalho/cabecalho.css">
+<link rel="stylesheet" href="{{ asset('cabecalho/cabecalho.css') }}">
 
 <header class="cabecalho">
     <div class="row">
         <div class="col-6 d-flex align-items-center">
-            <img src="assets/logo.png" class="logo" alt="Logo">
+            <img src="{{ asset('assets/logo.png') }}" class="logo" alt="Logo">
             <p class="titulo-projeto">Super Receitas</p>
         </div>
         <div class="col-lg-6 d-none d-lg-flex justify-content-end align-items-center">
